@@ -1,0 +1,97 @@
+$primary-color: #333;
+$secondary-color: #fff;
+
+$base-padding: 20px;
+$base-margin: 15px;
+
+$font-size-header: 24px;
+$font-size-text: 16px;
+
+$box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+$border-radius: 8px;
+
+$breakpoint-tablet: 768px;
+$breakpoint-mobile: 480px;
+
+@import "other-styles.scss";
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: $primary-color;
+    color: $secondary-color;
+    padding: $base-padding;
+    height: 80px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: $font-size-header;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: $base-margin;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: $secondary-color;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+main {
+    padding: $base-padding;
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section {
+    background-color: $secondary-color;
+    padding: $base-padding;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+    margin-bottom: $base-margin;
+    text-align: center;
+}
+
+section h2 {
+    color: $primary-color;
+    margin-bottom: 10px;
+}
+
+section p {
+    color: #666;
+    line-height: 1.6;
+}
+
+footer {
+    background-color: $primary-color;
+    color: $secondary-color;
+    padding: $base-padding;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+// Media Queries
+@media screen and (max-width: $breakpoint-tablet) {
+    // Tablet Styles
+}
+
+@media screen and (max-width: $breakpoint-mobile) {
+    // Mobile Styles
+}
