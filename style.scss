@@ -16,55 +16,44 @@ body {
 }
 
 header {
-    background-color: #343a40;
-    color: #fff;
+    background-color: $primary-color;
+    color: $secondary-color;
     padding: 20px;
     text-align: center;
-}
-
-header {
-    background-color: #343a40;
-    color: #fff;
-    padding: 10px 0;
 }
 
 .navbar {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.navbar ul {
     list-style: none;
-    margin: 0;
     padding: 0;
+    margin: 0;
+  
+    li {
+        display: inline;
+        margin-right: 20px;
+    }
+
+    a {
+        color: $secondary-color;
+        text-decoration: none;
+    }
+
+    &-center {
+        margin-left: 500px; 
+        margin-right: auto; 
+
+        img {
+            display: inline-block;
+        }
+    }
+
+    &-right {
+        margin-left: 20px; 
+        margin-right: auto; 
+    }
 }
-
-.navbar ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-.navbar a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.navbar-center {
-    margin-left: 500px; 
-    margin-right: auto; 
-}
-
-.navbar-center img {
-    display: inline-block;
-}
-
-.navbar-right {
-    margin-left: 20px; 
-    margin-right: auto; 
-}
-
-
 
 main {
     padding: 40px;
@@ -75,10 +64,10 @@ main {
 }
 
 .container {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: $container-bg-color;
+    padding: $container-padding;
+    border-radius: $container-border-radius;
+    box-shadow: $container-box-shadow;
     margin-bottom: 20px;
 }
 
@@ -96,6 +85,3 @@ section {
     margin-right: 2000px; 
     margin-bottom: 0; 
 }
-
-
-@import'style.css';

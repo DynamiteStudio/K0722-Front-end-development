@@ -1,4 +1,3 @@
-@import 'style.css';
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -14,43 +13,29 @@ header {
   text-align: center;
 }
 
-header {
-  background-color: #343a40;
-  color: #fff;
-  padding: 10px 0;
-}
-
 .navbar {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.navbar ul {
   list-style: none;
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
-
-.navbar ul li {
+.navbar li {
   display: inline;
   margin-right: 20px;
 }
-
 .navbar a {
   color: #fff;
   text-decoration: none;
 }
-
 .navbar-center {
   margin-left: 500px;
   margin-right: auto;
 }
-
 .navbar-center img {
   display: inline-block;
 }
-
 .navbar-right {
   margin-left: 20px;
   margin-right: auto;
