@@ -28,6 +28,7 @@ header {
 .navbar a {
   color: #fff;
   text-decoration: none;
+  padding: 10px 20px; /* Adding padding to increase tap target size */
 }
 .navbar-center {
   margin-left: 500px;
@@ -35,6 +36,7 @@ header {
 }
 .navbar-center img {
   display: inline-block;
+  margin-right: 500px;
 }
 .navbar-right {
   margin-left: 20px;
@@ -72,6 +74,23 @@ section {
   margin-bottom: 0;
 }
 
+button {
+  padding: 12px 24px; /* Adjusting button size */
+  font-size: 16px; /* Ensuring text is readable */
+}
+
+/* Additional styling for mobile devices */
+@media (max-width: 600px) {
+  a {
+    display: inline-block;
+    width: 100%; /* Making links easier to tap on small screens */
+    box-sizing: border-box;
+  }
+  button {
+    width: 100%; /* Making buttons full-width for easier tapping */
+    box-sizing: border-box;
+  }
+}
 footer {
   background-color: #343a40;
   color: #fff;
